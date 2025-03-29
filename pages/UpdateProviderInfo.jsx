@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 const BASE_URL = import.meta.env.VITE_API_BASE_URL
 
+//Fix the issue on the error
 const UpdateProviderSchema = yup.object().shape({
   first_name: yup.string().required("First name is required"),
   last_name: yup.string().required("Last name is required"),
